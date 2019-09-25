@@ -230,13 +230,13 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 640px) {
   .container h1 {
-    margin-left: 120px;
+    margin-left: 130px;
     margin-top: 10px;
   }
   nav {
     margin-top: 70px;
     text-align: center;
-    margin-right: 120px;
+    margin-right: 110px;
   }
 
   .container2 {
@@ -250,9 +250,76 @@ input[type="submit"]:hover {
     margin: 30px;
   }
 
+  main h2 {
+    text-align: center;
+  }
+
+  div.gallery {
+    margin: 5px;
+    margin-right: 45px;
+    top: 0;
+    padding: 50px;
+    border: 1px solid #dddddd;
+    float: left;
+    clear: right;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-left: 120px;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+    margin-left: 120px;
+  }
+  div.desc {
+    padding: 12px;
+    color: #dddddd;
+    text-align: center;
+    width: 298px;
+    left: 0;
+    bottom: 20px;
+    background: rgb(56, 167, 167);
+    position: absolute;
+    overflow: auto;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    float: left;
+    clear: both;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+  }
   footer {
     bottom: 0;
     position: absolute;
     margin-bottom: -100px;
   }
 }
+
+@media only screen and (min-width: 760px) {
+  
+  .container2 {
+    padding: 20px;
+    clear: both;
+    margin-right: 700px;
+    margin-left: 700px;
+    margin-bottom: 100px;
+  }
+  .wrapper {
+    margin: 30px;
+  }
+
+  .div main h2 {
+
+    font-size: 20px;
+  }
+  footer {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: -100px;
+  }
