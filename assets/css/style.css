@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
 }
 
-.container {
+.flexcontainer {
   max-width: 960px;
   margin: 0 auto;
 }
@@ -91,7 +91,7 @@ nav a:hover::before {
   transition: all ease-in-out 250ms;
 }
 
-.container2 {
+.flexcontainer2 {
   /*this container wraps content of my page (main, gallery, contact form)*/
   /* width: 57%; possible to use instead of the wrapper (max-width: 960px?) */
   height: auto;
@@ -229,25 +229,28 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 640px) {
-  .container h1 {
-    margin-left: 130px;
-    margin-top: 10px;
-  }
-  nav {
-    margin-top: 70px;
-    text-align: center;
-    margin-right: 110px;
+  .flexcontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
 
-  .container2 {
-    padding: 20px;
-    clear: both;
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .flexcontainer2 {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
     margin-right: 20px;
     margin-left: 20px;
-    margin-bottom: 100px;
-  }
-  .wrapper {
-    margin: 30px;
   }
 
   main h2 {
@@ -301,7 +304,7 @@ input[type="submit"]:hover {
   }
 }
 
-@media only screen and (min-width: 760px) {
+/* @media only screen and (min-width: 760px) {
   
   .container2 {
     padding: 20px;
@@ -322,4 +325,4 @@ input[type="submit"]:hover {
     bottom: 0;
     position: absolute;
     margin-bottom: -100px;
-  }
+  } */
