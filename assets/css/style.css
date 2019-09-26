@@ -299,10 +299,30 @@ input[type="submit"]:hover {
   }
 }
 @media only screen and (max-width: 980px) {
-}
+  .flexcontainer2 {
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100%;
+    width: auto;
+    margin-bottom: 100px;
+  }
+  div.gallery {
+    width: 300px;
+    height: 300px;
+  }
+  div.desc {
+    width: 100%;
+  }
 
-footer {
-  bottom: 0;
-  position: absolute;
-  margin-bottom: -100px;
+  footer {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: -100px;
+  }
 }
