@@ -261,8 +261,6 @@ input[type="submit"]:hover {
     width: 300px;
     height: 300px;
   }
-  .gallery img {
-  }
   div.desc {
     width: 100%;
   }
@@ -274,6 +272,37 @@ input[type="submit"]:hover {
   }
 }
 @media only screen and (max-width: 768px) {
+  .flexcontainer2 {
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100%;
+    width: auto;
+    margin-bottom: 100px;
+  }
+  div.gallery {
+    width: 250px;
+    height: 250px;
+  }
+  div.desc {
+    width: 100%;
+  }
+  footer {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: -100px;
+  }
 }
 @media only screen and (max-width: 980px) {
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  margin-bottom: -100px;
 }
